@@ -17,7 +17,11 @@ res.sendFile(path.join(__dirname, 'a2.html'));
 app.get('/a3', function (req, res) {
   res.sendFile(path.join(__dirname, 'a3.html'));
 });
-
+var counter=0;
+app.get('/counter',function(req,res){
+    counter = counter+1;
+    res.send(counter.toString());
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
