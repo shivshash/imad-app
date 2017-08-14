@@ -12,10 +12,10 @@ app.get('/a1', function (req, res) {
 res.sendFile(path.join(__dirname, 'a1.html'));
 });
 app.get('/a2', function (req, res) {
-  res.send( 'a2 is requested');
+res.sendFile(path.join(__dirname, 'a2.html'));  
 });
 app.get('/a3', function (req, res) {
-  res.send( 'a3 is requested');
+  res.sendFile(path.join(__dirname, 'a3.html'));
 });
 
 
